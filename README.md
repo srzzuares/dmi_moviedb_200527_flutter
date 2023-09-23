@@ -26,6 +26,14 @@ Practica 7
 | Descripción | Se creo una aplicacion en flutter, el contenido se basa en un drawer y un bottomNavigationBar con iconos, se cambio el icono de la aplicacion y la tipografia en el texto, despues se implementara una api de la pagina TheMovieDb que atraparemos datos por medio de una liga y su apikey de la misma pagina, pero será mas adelante. Este es la fase 1. |
 | Fecha de Carga | 17/09/23 |
 
+| No. |                     Versión                     |
+| :-: | :---------------------------------------------: |
+|  1.0.0  |     Se Creo el bottomNavigationBar Con sus respectivos iconos y texto en la parte inferior de la pantalla, tambien un icono de busqueda en la parte superior izquierda de la pantalla.   |
+|  2.0.0  |   Se integro un drawer con sus respectivos elementos de botones (3 botones [Peliculas, Televiion, Cerrar] y un logo [Logo de la aplicacion]).   |
+|  3.0.0  | Se integro un SplashScreen al inicio de ejecutar la aplicacion de flutter y reacomodamiento de código. |
+|  4.0.0  |         Se crean las pantallas para redirijir para los botones del drawer y bottomNavigationBar         |
+|  5.0.0  |      --------      |
+
 | No. |                     Pruebas                     |
 | :-: | :---------------------------------------------: |
 |  1  |     ![Prueba 1 de inicio a la aplicacion]()     |
