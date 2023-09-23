@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="dmi_moviedb_200527_flutter"
+        android:label="MovieDB"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

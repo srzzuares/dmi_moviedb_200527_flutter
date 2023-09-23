@@ -1,21 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
-class RunApp extends StatelessWidget {
-  const RunApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'CsSuar',
-      theme: ThemeData.dark(),
-      home: const Pagina1P(titulo: '200527 - TheMovieDb'),
-    );
-  }
-}
-
 class Pagina1P extends StatefulWidget {
   const Pagina1P({super.key, required this.titulo});
   final String titulo;
