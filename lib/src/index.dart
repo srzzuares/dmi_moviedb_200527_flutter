@@ -1,5 +1,9 @@
+import 'package:dmi_moviedb_200527_flutter/src/ScreenPeliculas.dart';
+import 'package:dmi_moviedb_200527_flutter/src/ScreenTv.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+//import 'dart:async';
+//import 'package:flutter_splash_screen/flutter_splash_screen.dart';
 
 class Pagina1P extends StatefulWidget {
   const Pagina1P({super.key, required this.titulo});
@@ -9,6 +13,19 @@ class Pagina1P extends StatefulWidget {
 }
 
 class _Pagina1PState extends State<Pagina1P> {
+  /* @override
+  void initState() {
+    super.initState();
+    hideScreen();
+  }
+
+  ///hide your splash screen
+  Future<void> hideScreen() async {
+    Future.delayed(Duration(milliseconds: 3600), () {
+      FlutterSplashScreen.hide();
+    });
+  } */
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,11 +47,25 @@ class _Pagina1PState extends State<Pagina1P> {
                 leading: Icon(Icons.local_movies),
                 title: Text('Peliculas',
                     style: TextStyle(fontFamily: 'Bebas', fontSize: 24)),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              ScreenPeliculas(titulo: 'Peliculas - 200527')));
+                },
               ),
               ListTile(
                 leading: Icon(Icons.live_tv),
                 title: Text('Television',
                     style: TextStyle(fontFamily: 'Bebas', fontSize: 24)),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              ScreenTv(titulo: 'Televisoras')));
+                },
               ),
               ListTile(
                 leading: Icon(Icons.close),

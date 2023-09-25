@@ -1,6 +1,7 @@
-import 'dart:async';
+//import 'dart:async';
 import 'package:dmi_moviedb_200527_flutter/src/index.dart';
 import 'package:flutter/material.dart';
+//import 'package:splash_view/splash_view.dart';
 
 class RunApp extends StatelessWidget {
   const RunApp({super.key});
@@ -12,12 +13,21 @@ class RunApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'CsSuar',
       theme: ThemeData.dark(),
-      home: SplashScreen(),
-      // Pagina1P(titulo: '200527 - TheMovieDb')
+      home: Pagina1P(titulo: '200527 - TheMovieDb'),
+      /* SplashView(
+        backgroundColor: Color(0xFF2B3336),
+        loadingIndicator: RefreshProgressIndicator(),
+        logo: Image.asset('asset/icon/MovieTube_Logo.png'),
+        done: Done(Pagina1P(titulo: '200527 - TheMovieDb')),
+      ), */ //Este es por medio de un paquete
+      //Home se puede cambiar por el SplashScreen() para que se imprima el otro Propio
+      // Pagina1P(titulo: '200527 - TheMovieDb') esto es la pantalla de contenido de la aplicacion
     );
   }
 }
 
+//Codigo para hacer un splash screen propio
+/* 
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -63,3 +73,4 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
+ */
