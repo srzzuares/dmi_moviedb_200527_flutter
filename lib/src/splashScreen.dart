@@ -1,6 +1,8 @@
 //import 'dart:async';
 import 'package:dmi_moviedb_200527_flutter/src/index.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 //import 'package:splash_view/splash_view.dart';
 
 class RunApp extends StatelessWidget {
@@ -13,7 +15,7 @@ class RunApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'CsSuar',
       theme: ThemeData.dark(),
-      home: Pagina1P(titulo: '200527 - TheMovieDb'),
+      home: SplashScreen(), //Pagina1P(titulo: '200527 - TheMovieDb'),
       /* SplashView(
         backgroundColor: Color(0xFF2B3336),
         loadingIndicator: RefreshProgressIndicator(),
@@ -27,14 +29,34 @@ class RunApp extends StatelessWidget {
 }
 
 //Codigo para hacer un splash screen propio
-/* 
+
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
-  int seg = 5;
+class _SplashScreenState extends State<SplashScreen>
+    with SingleTickerProviderStateMixin {
+  @override
+  void initState() {
+    super.initState();
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
+
+    Future.delayed(const Duration(seconds: 2), () {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
+        builder: (context) => Pagina1P(titulo: '200527 - TheMovieDb'),
+      ));
+    });
+  }
+
+  @override
+  void dispose() {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+        overlays: SystemUiOverlay.values);
+    super.dispose();
+  }
+
+  /* int seg = 5;
   @override
   void initState() {
     super.initState();
@@ -42,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (_) => Pagina1P(titulo: '200527 - TheMovieDb')));
     });
-  }
+  } */
 
   @override
   Widget build(BuildContext context) {
@@ -73,4 +95,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
- */
