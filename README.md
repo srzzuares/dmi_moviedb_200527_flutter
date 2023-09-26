@@ -36,11 +36,10 @@ Practica 7
 
 | No. |                     Pruebas                     |
 | :-: | :---------------------------------------------: |
-|  1  |     ![Prueba 1 de inicio a la aplicacion]()     |
-|  2  |   ![Prueba 2 de Tocar el boton primera vez]()   |
-|  3  | ![Prueba 3 de Tocar el boton primera segunda]() |
-|  4  |         ![Prueba 4 de Tocar el menu]()          |
-|  5  |      ![Prueba 5 de GridView de imagenes]()      |
+|  1  |     ![Prueba 1 de inicio a la aplicacion](https://github.com/srzzuares/dmi_moviedb_Practica7_200527_flutter/blob/main/asset/pruebas/p-1.png)     |
+|  2  |   ![Prueba 2 de mismo inicio en otra pantalla](https://github.com/srzzuares/dmi_moviedb_Practica7_200527_flutter/blob/main/asset/pruebas/p-2.png)   |
+|  3  | ![Prueba 3 de Tocar el boton drawer](https://github.com/srzzuares/dmi_moviedb_Practica7_200527_flutter/blob/main/asset/pruebas/p-3.png) |
+
 
 # Practica7_200527
 
